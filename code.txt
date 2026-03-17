@@ -9,7 +9,7 @@ int remaining_days(DayOfWeek S)
    switch (S)
    {
     case monday: return 5;
-    case tuesday: return 4;
+    case tuesday: return 4
     case wednesday: return 3;
     case thursday: return 2;
     case friday: return 1;
