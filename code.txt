@@ -1,0 +1,33 @@
+#include<stdio.h>
+typedef enum 
+{
+    monday=1,tuesday=2,wednesday=3,thursday=4,friday=5,saturday=6,sunday=7
+}DayOfWeek;
+
+int remaining_days(DayOfWeek S)
+{
+   switch (S)
+   {
+    case monday: return 5;
+    case tuesday: return 4;
+    case wednesday: return 3;
+    case thursday: return 2;
+    case friday: return 1;
+    case saturday: return 0;
+    case sunday: return 0;
+    default: 
+    printf("Invalid");
+   }
+
+}
+int main()
+{
+    DayOfWeek days;
+    printf("Enter the current day (mon=1,tue=2,wed=3,thu=4,fri=5,sat=6,sun=7):");
+    scanf("%d",&days);
+    int result =remaining_days(days);
+    printf("Remaining days = %d ",result);
+
+    return 0;
+
+}
