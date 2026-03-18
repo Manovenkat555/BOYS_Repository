@@ -1,5 +1,4 @@
 #include<stdio.h>
-<<<<<<< HEAD
 
 float circle( float radius);
 
